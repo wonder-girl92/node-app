@@ -20,7 +20,6 @@ await saveNotes(notes)
 async function getNotes(){
   const notes = await fs.readFile(notesPath, {encoding: 'utf-8'})
   return Array.isArray(JSON.parse(notes)) ? JSON.parse(notes) : []
-
 }
 
 async function saveNotes(notes) {
