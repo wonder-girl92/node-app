@@ -45,5 +45,5 @@ const notes = await getNotes()
 }
 
 module.exports = {
-  addNote, printNotes, removeNote
+  addNote, getNotes, removeNote
 }
